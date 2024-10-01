@@ -11,4 +11,5 @@
   - footer
 # Functionalities
   - Tailwind css installation
-  - 
+  - hero-parallex added for background
+  - image slider has been added

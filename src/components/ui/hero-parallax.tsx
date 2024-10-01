@@ -63,10 +63,9 @@ export const Header = () => {
       <h1 className="text-2xl md:text-7xl font-bold dark:text-black">
         The Ultimate <br /> sheet metalling works
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+      <p className="max-w-2xl text-base md:text-xl mt-8 text-black font-bold">
+        We specialize in bending, welding, and finishing to meet your exact specifications
+        with durability and precision.
       </p>
     </div>)
   );
