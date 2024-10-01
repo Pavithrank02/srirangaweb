@@ -1,14 +1,17 @@
+import { Route, Routes } from "react-router-dom";
+
+import Home from "./components/view/Home";
 import Header from "./components/Header";
-import { ImagesSliderDemo } from "./components/ImageSlider";
-import { HeroParallaxDemo } from "./components/Show";
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <HeroParallaxDemo />
-      <ImagesSliderDemo />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+
     </div>
   );
 }

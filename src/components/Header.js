@@ -1,5 +1,6 @@
 import React from 'react';
 import img from '../images/img1.JPG';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -11,23 +12,72 @@ const Header = () => {
         </div>
 
         {/* Navigation */}
+
+
         <div className='flex justify-around font-bold text-sm md:text-lg lg:text-lg w-2/3 md:w-2/3'>
           <div className='p-2'>
-            Home
+            <NavLink
+              to='/'
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-yellow-500 border-b-2 border-yellow-500'
+                  : 'hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-110'
+              }
+            >
+              Home
+            </NavLink>
           </div>
           <div className='p-2'>
-            About Us
+            <NavLink
+              to='/about'
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-yellow-500 border-b-2 border-yellow-500'
+                  : 'hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-110'
+              }
+            >
+              About Us
+            </NavLink>
           </div>
           <div className='p-2'>
-            Services
+            <NavLink
+              to='/services'
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-yellow-500 border-b-2 border-yellow-500'
+                  : 'hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-110'
+              }
+            >
+              Services
+            </NavLink>
           </div>
           <div className='p-2'>
-            Capabilities
+            <NavLink
+              to='/capabily'
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-yellow-500 border-b-2 border-yellow-500'
+                  : 'hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-110'
+              }
+            >
+              Capabilities
+            </NavLink>
           </div>
           <div className='p-2'>
-            Customers
+            <NavLink
+              to='/customers'
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-yellow-500 border-b-2 border-yellow-500'
+                  : 'hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-110'
+              }
+            >
+              Customers
+            </NavLink>
           </div>
         </div>
+
+
 
         {/* Contact Button */}
         <div>
