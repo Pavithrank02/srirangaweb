@@ -13,3 +13,4 @@
   - Tailwind css installation
   - hero-parallex added for background
   - image slider has been added
+  - header added with navlink
