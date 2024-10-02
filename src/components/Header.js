@@ -1,6 +1,7 @@
 import React from 'react';
 import img from '../images/img1.JPG';
 import { NavLink } from 'react-router-dom';
+import { HoverBorderGradientDemo } from './Button';
 
 const Header = () => {
   return (
@@ -81,9 +82,10 @@ const Header = () => {
 
         {/* Contact Button */}
         <div>
-          <button className='p-2 md:p-4 w-24 md:w-36 bg-[#D9A125] hover:bg-yellow-800 text-sm md:text-lg lg:text-2xl font-bold rounded-xl md:rounded-2xl'>
+          {/* <button className='p-2 md:p-4 w-24 md:w-36 bg-[#D9A125] hover:bg-yellow-800 text-sm md:text-lg lg:text-2xl font-bold rounded-xl md:rounded-2xl'>
             Contact
-          </button>
+          </button> */}
+          <HoverBorderGradientDemo />
         </div>
       </div>
     </div>
