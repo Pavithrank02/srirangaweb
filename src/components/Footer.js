@@ -1,18 +1,20 @@
 import React from 'react'
 import img from '../images/img1.JPG';
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaMailBulk } from "react-icons/fa";
-import { FaPhoneSquareAlt } from "react-icons/fa";
+import { motion } from 'framer-motion';
+import { FaMapMarkerAlt, FaWhatsapp, FaMailBulk, FaPhoneSquareAlt, FaFacebook, FaInstagramSquare } from "react-icons/fa";
+
+
 
 const Footer = () => {
   return (
     <div className='h-80 bg-black flex flex-col justify-around w-full items-center'>
-      <div className='h-70 flex flex-row justify-around w-9/12 items-center border-b-4 border-yellow-600'>
-        <div className='h-full w-1/2 flex flex-col item-end justify-around text-justify'>
-          <div>
+      <div className='h-72 flex flex-row justify-between w-9/12 border-b-4 border-yellow-600 '>
+        <div className='h-full w-1/2 flex flex-col item-center justify-center text-justify '>
+          <div className=' flex '>
             <img src={img} className='h-24' alt="Logo" />
+
           </div>
-          <div className='text-white text-wrap text-xl font-light w-11/12'>
+          <div className='text-white text-wrap text-lg font-light w-11/12'>
             APX Incorporated is comprised of five fully integrated manufacturing operations.
             In addition to APX Enclosures  (NEMA Enclosures & ITS Enclosures) the APX Company is comprised of APX York Sheet Metal,
             APX Industrial Coatings, APX Mitchell Machine Shop, and APX Precision Routing
@@ -42,7 +44,16 @@ const Footer = () => {
             <p className='text-base font-light'> Monday-Friday: 7:00AM – 5:00PM<br />
               Sat-Sun: CLOSED</p>
           </div>
-
+          <div className='text-white font-bold text-lg'>
+            <p>
+              Follow Us: <br />
+            </p>
+            <motion.a className='w-44 flex flex-row justify-between text-white font-light' animate={{ x: 0, scale: 1 }} initial={{ scale: 0 }} transition={{ type: "spring", delay: 2 }} href="https://github.com/Pavithrank02" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp style={{ color: '#FFCA4B' }} size={32} />
+              <FaInstagramSquare style={{ color: '#FFCA4B' }} size={32} />
+              <FaFacebook style={{ color: '#FFCA4B' }} size={32} />
+            </motion.a>
+          </div>
         </div>
       </div>
       <div className='text-white'>
