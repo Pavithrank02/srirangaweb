@@ -1,6 +1,9 @@
 import React from 'react'
 import img from '../images/img1.JPG';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaMailBulk } from "react-icons/fa";
+import { FaPhoneSquareAlt } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div className='h-80 bg-black flex flex-col justify-around w-full items-center'>
@@ -22,14 +25,14 @@ const Footer = () => {
           </div>
           <div>
 
-            <div className='text-white font-light text-base'>
-              :+91 97904 84558
+            <div className='text-white font-light text-base flex flex-row  items-center'>
+              <FaPhoneSquareAlt style={{ color: '#FFCA4B' }} /> : +91 97904 84558
             </div>
-            <div className='text-white font-light text-base'>
-              :srirangalaser.coimbatore@gmail.com
+            <div className='text-white font-light text-base flex flex-row  items-center'>
+              <FaMailBulk style={{ color: '#FFCA4B' }} /> : srirangalaser.coimbatore@gmail.com
             </div>
-            <div className='text-white font-light text-base'>
-              <FontAwesomeIcon icon="fa-solid fa-map-pin" style={{ color: "#FFD43B", }} />: 9/1E, Gandhi Nagar, Ondiputhur Road, Irugur, Coimbatore - 641103
+            <div className='text-white font-light text-base flex flex-row justify-center items-center'>
+              <FaMapMarkerAlt style={{ color: '#FFCA4B' }} /> : 9/1E, Gandhi Nagar, Ondiputhur Road, Irugur, Coimbatore - 641103
             </div>
           </div>
           <div className='text-white font-bold text-lg'>
@@ -43,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='text-white'>
-        <p>© 2022 APX Company – All rights reserved. - Powered By CodeFusion</p>
+        <p>© 2024 Sri Ranga Company – All rights reserved.</p>
       </div>
 
     </div>
