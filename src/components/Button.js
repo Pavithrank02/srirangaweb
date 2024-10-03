@@ -8,7 +8,7 @@ export function HoverBorderGradientDemo() {
       <HoverBorderGradient
         containerClassName="rounded-full"
         as="button"
-        className="dark:bg-black hover:bg-yellow-800 bg-white text-black dark:text-white flex items-center space-x-4">
+        className="dark:bg-black hover:bg-yellow-600 bg-white text-black dark:text-white flex items-center space-x-4">
         {/* <AceternityLogo /> */}
         <span>Contact Us</span>
       </HoverBorderGradient>
