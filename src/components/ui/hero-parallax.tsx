@@ -2,6 +2,7 @@
 import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { Link } from "react-router-dom";
+import { HoverBorderGradientDemo } from "../Button";
 
 export const HeroParallax = ({
   products
@@ -67,6 +68,7 @@ export const Header = () => {
         We specialize in bending, welding, and finishing to meet your exact specifications
         with durability and precision.
       </p>
+
     </div>)
   );
 };
