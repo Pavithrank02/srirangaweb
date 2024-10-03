@@ -4,17 +4,19 @@ import { HoverBorderGradient } from "../components/ui/hover-border-gradient.tsx"
 
 export function HoverBorderGradientDemo() {
   return (
-    (<div className=" flex justify-center text-center">
+    <div className="flex justify-center text-center">
       <HoverBorderGradient
         containerClassName="rounded-full"
         as="button"
-        className="dark:bg-black hover:bg-yellow-600 bg-white text-black dark:text-white flex items-center space-x-4">
+        className="dark:bg-black hover:bg-yellow-600 bg-white text-black dark:text-white flex items-center space-x-4 shadow-2xl hover:shadow-[0_4px_15px_rgba(0,0,0,0.3)] transition-shadow duration-300 ease-in-out"
+      >
         {/* <AceternityLogo /> */}
         <span>Contact Us</span>
       </HoverBorderGradient>
-    </div>)
+    </div>
   );
 }
+
 
 // const AceternityLogo = () => {
 //   return (
