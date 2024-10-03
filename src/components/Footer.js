@@ -26,7 +26,9 @@ const Footer = () => {
             Official info:
           </div>
           <div>
-
+            <p className='text-white font-bold text-lg'>
+              Contact Us: <br />
+            </p>
             <div className='text-white font-light text-base flex flex-row  items-center'>
               <FaPhoneSquareAlt style={{ color: '#FFCA4B' }} /> : +91 97904 84558
             </div>

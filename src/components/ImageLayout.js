@@ -75,7 +75,7 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://5.imimg.com/data5/SELLER/Default/2023/9/342749361/QI/OU/FJ/40353772/40353772-location-fcp-1689928065590-1000x1000.jpg",
   },
   {
     id: 2,
