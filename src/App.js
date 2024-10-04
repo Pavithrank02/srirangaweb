@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/view/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import AboutUs from "./components/view/AboutUs";
+import Service from "./components/view/Service";
 
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/services" element={<Service />} />
       </Routes>
       <Footer />
     </div>

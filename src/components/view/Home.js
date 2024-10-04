@@ -6,7 +6,6 @@ import { ImagesSliderDemo } from '../ImageSlider'
 const Home = () => {
   return (
     <div>
-
       <HeroParallaxDemo />
       <ImagesSliderDemo />
     </div>

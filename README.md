@@ -14,3 +14,5 @@
   - hero-parallex added for background
   - image slider has been added
   - header added with navlink
+  - footer added
+  - about us page with image slider and content is added
