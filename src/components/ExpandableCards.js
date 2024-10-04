@@ -64,15 +64,7 @@ export function ExpandableCardDemo({ cards }) {
             layoutId={`card-${active.title}-${id}`}
             ref={ref}
             className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden">
-            <motion.div layoutId={`image-${active.title}-${id}`}>
-              <img
-                priority
-                width={200}
-                height={300}
-                src={active.src}
-                alt={active.title}
-                className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top" />
-            </motion.div>
+
 
             <div>
               <div className="flex justify-between items-start p-4">
@@ -89,13 +81,13 @@ export function ExpandableCardDemo({ cards }) {
                   </motion.p>
                 </div>
 
-                <motion.a
+                {/* <motion.a
                   layoutId={`button-${active.title}-${id}`}
                   href={active.ctaLink}
                   target="_blank"
                   className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white">
                   {active.ctaText}
-                </motion.a>
+                </motion.a> */}
               </div>
               <div className="pt-4 relative px-4">
                 <motion.div
