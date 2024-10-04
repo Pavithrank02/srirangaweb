@@ -16,3 +16,4 @@
   - header added with navlink
   - footer added
   - about us page with image slider and content is added
+  - capabilities page is been done
