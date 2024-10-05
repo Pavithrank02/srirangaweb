@@ -367,9 +367,7 @@ const cards6 = [
             <tr>
               <th>Name</th>: <td>Anom</td>
             </tr>
-            <tr>
-              <th>Name</th>: <td>Anom</td>
-            </tr>
+
             <tr>
               <th>Name</th>: <td>Anom</td>
             </tr>
