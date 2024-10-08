@@ -12,7 +12,7 @@ export function TabsDemo() {
       value: "MDF Jalis",
       content: (
         <div
-          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide  relative rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
+          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide h-full relative rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
           <p>MDF Jalis</p>
           <ExpandableCardDemo cards={cards1} />
         </div>
@@ -45,7 +45,7 @@ export function TabsDemo() {
       value: "content",
       content: (
         <div
-          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide  relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
+          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide  relative  rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
           <p>Decorative Wall Art</p>
           <ExpandableCardDemo cards={cards4} />
         </div>
@@ -56,7 +56,7 @@ export function TabsDemo() {
       value: "random",
       content: (
         <div
-          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide  relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
+          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide  relative  rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
           <p>Cr Sheet</p>
           <ExpandableCardDemo cards={cards5} />
         </div>

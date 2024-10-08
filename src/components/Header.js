@@ -5,17 +5,15 @@ import { HoverBorderGradientDemo } from './Button';
 
 const Header = () => {
   return (
-    <div className='fixed top-0 left-0 h-28 w-full bg-black z-50'>
-      <div className='text-white flex items-center justify-around h-full'>
+    <div className='fixed top-0 left-0 h-20 md:h-28 w-full bg-black z-50'>
+      <div className='text-white flex items-center justify-between md:justify-around h-full px-4 md:px-0'>
         {/* Logo */}
-        <div>
+        <div className='hidden md:block'>
           <img src={img} className='h-10 md:h-14' alt="Logo" />
         </div>
 
         {/* Navigation */}
-
-
-        <div className='flex justify-around font-bold text-sm md:text-lg lg:text-lg w-2/3 md:w-2/3'>
+        <div className='flex justify-around font-bold text-xs sm:text-sm md:text-lg lg:text-lg w-full md:w-2/3'>
           <div className='p-2'>
             <NavLink
               to='/'
@@ -78,13 +76,8 @@ const Header = () => {
           </div>
         </div>
 
-
-
         {/* Contact Button */}
         <div>
-          {/* <button className='p-2 md:p-4 w-24 md:w-36 bg-[#D9A125] hover:bg-yellow-800 text-sm md:text-lg lg:text-2xl font-bold rounded-xl md:rounded-2xl'>
-            Contact
-          </button> */}
           <HoverBorderGradientDemo />
         </div>
       </div>
