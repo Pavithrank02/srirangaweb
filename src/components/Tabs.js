@@ -12,7 +12,7 @@ export function TabsDemo() {
       value: "MDF Jalis",
       content: (
         <div
-          className="w-full h-full overflow-scroll overflow-x-hidden scrollbar-hide  relative rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
+          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide  relative rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
           <p>MDF Jalis</p>
           <ExpandableCardDemo cards={cards1} />
         </div>

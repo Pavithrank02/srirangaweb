@@ -96,7 +96,6 @@ export function ExpandableCardDemo({ cards }) {
                   </div>
                 </div>
               </div>
-
               {/* Limited content area with scrolling */}
               <div className="flex p-6 relative overflow-y-auto max-h-96 w-full  scrollbar-hide">
                 <motion.div
@@ -110,7 +109,6 @@ export function ExpandableCardDemo({ cards }) {
                 </motion.div>
               </div>
             </motion.div>
-
           </div>
         ) : null}
       </AnimatePresence>
