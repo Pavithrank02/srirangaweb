@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect.tsx";
+import { HoverBorderGradientDemo } from "./Button.js";
 
 
 const words = 'The process involves various machines and methods depending on the type of end results you’re searching for. For example, the procedure can include laser cutting, bending, inserts, welding, grinding, powder coating and others. Here’s a quick rundown of varying processes:'
@@ -58,29 +59,48 @@ const Capability = () => {
             ))}
           </div>
         </div>
-        <div className='flex justify-center h-full'>
-          <h2 className='text-black font-bold text-3xl from-neutral-500 to-slate-500'><span className="text-yellow-600"> Industries </span> Served</h2>
-        </div>
-        <div className=" text-xl text-justify font-semibold">
-          <p className="flex justify-center w-11/12 ml-14">Sri Ranga Laser supports industries across the board — even ones that may not be listed below. No matter the custom sheet metal fabrication services you require, our professionals have you covered:</p>
-        </div>
-        <div className='flex flex-row h-96 justify-around items-center text-lg text-justify '>
-
-          <div className="flex h-full justify-center w-1/2  items-center">
-            <img
-              src='https://5.imimg.com/data5/SELLER/Default/2023/9/342904673/DM/LA/ZY/40353772/74ac532d-1697-49bb-b940-d2cf2be41cdf-1000x1000.jpg'
-              alt='ss'
-              width={200}
-              height={600}
-              className="h-96 w-96  sm:rounded-tr-lg sm:rounded-tl-lg object-cover "
-            />
+        <div className='flex flex-col justify-between h-full'>
+          <div className='flex  justify-center w-full '>
+            <h2 className='text-black font-bold text-3xl from-neutral-500 to-slate-500'><span className="text-yellow-600"> Industries </span> Served</h2>
           </div>
-          <div className="w-1/2 h-full flex flex-col justify-evenly">
-            {industry.map((i, k) => (
-              <li k={k} className="text-xl">
-                {i}
-              </li>
-            ))}
+
+          <div className=" text-xl text-justify font-semibold">
+            <p className="flex justify-center w-11/12 ml-14">Sri Ranga Laser supports industries across the board — even ones that may not be listed below. No matter the custom sheet metal fabrication services you require, our professionals have you covered:</p>
+          </div>
+          <div className='flex flex-row h-96 justify-around items-center text-lg text-justify '>
+
+            <div className="flex h-full justify-center w-1/2  items-center">
+              <img
+                src='https://5.imimg.com/data5/SELLER/Default/2023/9/342904673/DM/LA/ZY/40353772/74ac532d-1697-49bb-b940-d2cf2be41cdf-1000x1000.jpg'
+                alt='ss'
+                width={200}
+                height={600}
+                className="h-96 w-96  sm:rounded-tr-lg sm:rounded-tl-lg object-cover "
+              />
+            </div>
+            <div className="w-1/2 h-full flex flex-col justify-evenly">
+              {industry.map((i, k) => (
+                <li k={k} className="text-xl">
+                  {i}
+                </li>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className='flex flex-col justify-center  h-full'>
+          <div className='flex  justify-center w-full '>
+            <h2 className=' text-black font-bold text-3xl from-neutral-500 to-slate-500'>Choose<span className="text-yellow-600">  Sri Ranga Laser
+            </span> </h2>
+          </div>
+          <div className=" text-xl text-justify font-semibold h-60 flex flex-col justify-center items-center">
+            <p className="flex justify-center w-11/12 ml-14">Sri Ranga Laser custom sheet metal parts in Northern Maryland that are reliable and top-quality. Read our blog to learn more about trends or submit a contact form for a free quote. <br />You can also call us at +91 97904 84558.
+
+              All of our fabricated metal products are made in the India.<br />
+
+              #carbonsteel #fabrication #sheetfabrication</p>
+            <div className="flex items-start ml-12">
+              <HoverBorderGradientDemo />
+            </div>
           </div>
         </div>
       </div >
