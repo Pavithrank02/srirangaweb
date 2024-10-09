@@ -22,7 +22,8 @@ const TwoColumnTable = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-8">
+    <div className="flex flex-col justify-between items-center min-h-full bg-gray-100 p-8">
+      <h1 className='text-3xl font-extrabold'>Fact Sheet</h1>
       <motion.div
         initial="hidden"
         animate="visible"
@@ -31,6 +32,7 @@ const TwoColumnTable = () => {
         transition={{ duration: 0.5 }}
         className="bg-white shadow-lg rounded-lg overflow-hidden max-w-4xl w-1/2"
       >
+
         <div className="grid grid-cols-2 gap-4 p-4">
           {/* Left Column (Head) */}
           <div className="flex flex-col gap-4">
@@ -38,7 +40,7 @@ const TwoColumnTable = () => {
 
               <motion.div
                 key={key}
-                className="font-semibold text-lg text-gray-800"
+                className="font-bold text-lg text-gray-800"
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.2, type: 'spring' }}
