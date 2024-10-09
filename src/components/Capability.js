@@ -51,7 +51,7 @@ const Capability = () => {
           <div className='flex flex-col justify-between items-center text-lg text-justify mb-7  mt-5'>
             {Object.entries(content).map(([key, value]) => (
 
-              <li key={key} className="w-4/12 ">
+              <li key={key} className="w-4/12 text-xl">
 
                 <span className="font-bold ">{key}:</span> {value}
 

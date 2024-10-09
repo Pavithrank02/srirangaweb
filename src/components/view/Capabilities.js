@@ -5,7 +5,7 @@ import Capability from '../Capability'
 const Capabilities = () => {
   return (
     <div>
-      <ImagesSliderDemo />
+      <ImagesSliderDemo name={'Capabilities'} />
       <Capability />
     </div>
   )
