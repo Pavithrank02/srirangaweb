@@ -7,6 +7,7 @@ import AboutUs from "./components/view/AboutUs";
 import Service from "./components/view/Service";
 import Capabilities from "./components/view/Capabilities";
 import Contact from "./components/view/Contact";
+import LaserCutting from "./components/LaserCutting";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/services" element={<Service />} />
         <Route path="/capability" element={<Capabilities />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/laserservice" element={<LaserCutting />} />
       </Routes>
       <Footer />
     </div>
