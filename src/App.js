@@ -8,6 +8,8 @@ import Service from "./components/view/Service";
 import Capabilities from "./components/view/Capabilities";
 import Contact from "./components/view/Contact";
 import LaserCutting from "./components/LaserCutting";
+import MetalBending from "./components/MetalBending";
+import Welding from "./components/Welding";
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path="/capability" element={<Capabilities />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/laserservice" element={<LaserCutting />} />
+        <Route path="/bendingservice" element={<MetalBending />} />
+        <Route path="/Welding" element={<Welding />} />
       </Routes>
       <Footer />
     </div>
