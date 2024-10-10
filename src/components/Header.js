@@ -70,7 +70,7 @@ const Header = () => {
         </div>
 
         {/* Contact Button */}
-        <div>
+        <div className='hidden md:block'>
           <HoverBorderGradientDemo />
         </div>
       </div>

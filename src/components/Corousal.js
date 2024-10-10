@@ -5,12 +5,13 @@ import { ImagesSlider } from "../components/ui/images-slider.tsx";
 
 export function ImagesSliderDemo({ name }) {
   const images = [
-    "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://media.istockphoto.com/id/177007701/photo/laser-cutting-of-metal-sheet-with-sparks.jpg?s=612x612&w=0&k=20&c=oYWr7odGnFBClfVgtV442EL-rGLwaIVW1p2nJSsLji8=",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3bxyqTxFDxOSTeLdomF15mKd9hxooWfPhCw&s",
+    "https://www.adorwelding.com/wp-content/uploads/2021/06/banner-img.png",
   ];
+
   return (
-    (<ImagesSlider className="h-[25rem]" images={images}>
+    <ImagesSlider className="h-[20rem] md:h-[25rem]" images={images}>
       <motion.div
         initial={{
           opacity: 0,
@@ -23,12 +24,14 @@ export function ImagesSliderDemo({ name }) {
         transition={{
           duration: 0.6,
         }}
-        className="mt-20 z-50 flex flex-col justify-center items-center">
+        className="mt-10 md:mt-20 z-50 flex flex-col justify-center items-center"
+      >
         <motion.p
-          className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          className="font-bold text-lg md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-2 md:py-4"
+        >
           {name}
         </motion.p>
       </motion.div>
-    </ImagesSlider>)
+    </ImagesSlider>
   );
 }
