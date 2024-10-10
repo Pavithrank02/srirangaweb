@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
-import { Lens } from "../components/ui/lens.tsx";
-import { motion } from "framer-motion";
 import { cn } from "../lib/utils.ts";
+import { Lens } from "../components/ui/lens.tsx";
 
 export function LensDemo({ src, width, height, className, alt }) {
   const [hovering, setHovering] = useState(false);

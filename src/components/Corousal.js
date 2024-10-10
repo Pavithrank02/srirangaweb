@@ -1,6 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
 import React from "react";
+import { motion } from "framer-motion";
 import { ImagesSlider } from "../components/ui/images-slider.tsx";
 
 export function ImagesSliderDemo({ name }) {

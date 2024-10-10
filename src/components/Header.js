@@ -1,8 +1,8 @@
 import React from 'react';
-import img from '../images/img1.JPG';
 import { NavLink } from 'react-router-dom';
 import { HoverBorderGradientDemo } from './Button';
 import { Navbar } from './Navbar.js'
+import img from '../images/img1.JPG';
 
 const Header = () => {
   return (

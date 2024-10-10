@@ -1,9 +1,8 @@
 "use client";
-
 import { Tabs } from "../components/ui/tabs.tsx";
 import { ExpandableCardDemo } from "./ExpandableCards.js";
-import '../global.css'
 import TwoColumnTable from "./Table.js";
+import '../global.css'
 
 export function TabsDemo() {
   const tabs = [

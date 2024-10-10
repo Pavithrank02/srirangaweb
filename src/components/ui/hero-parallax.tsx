@@ -62,7 +62,7 @@ export const Header = () => {
     (<div
       className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-black">
-        The Ultimate <br /> sheet metalling works
+        The Ultimate <br /> <span className="text-yellow-600">Sheet Metalling</span> Works
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-black font-bold">
         We specialize in bending, welding, and finishing to meet your exact specifications
@@ -96,11 +96,12 @@ export const ProductCard = ({
           alt={product.title} />
       </Link>
       <div
-        className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2
-        className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        {product.title}
-      </h2>
+        className="absolute flex justify-center items-center inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none">
+        <h2
+          className="absolute  opacity-0 group-hover/product:opacity-100 text-white text-4xl font-bold">
+          {product.title}
+        </h2>
+      </div>
     </motion.div>)
   );
 };
