@@ -1,5 +1,6 @@
 import React from 'react'
 import { HoverBorderGradientDemo } from './Button'
+import Choose from './Choose'
 
 const ServicesComponent = ({ image, benefits, bullets, data }) => {
   return (
@@ -66,14 +67,14 @@ const ServicesComponent = ({ image, benefits, bullets, data }) => {
         <div className="flex h-full justify-center w-1/2  items-center">
 
           <img
-            src={image.img3}
+            src={image?.img3}
             alt='ss'
             className="h-80 w-96  sm:rounded-tr-lg sm:rounded-tl-lg object-fill "
           />
         </div>
         <div className="w-1/2 h-full flex flex-col justify-evenly ">
           <p className='w-3/4 font-semibold text-xl '>{data.desc5}</p>
-          {benefits.map((i, k) => (
+          {benefits?.map((i, k) => (
             <li k={k} className="text-xl w-3/5">
               {i}
             </li>
@@ -85,23 +86,7 @@ const ServicesComponent = ({ image, benefits, bullets, data }) => {
         <div className='w-1/2 border-b-4 border-b-yellow-600'>
         </div>
       </div>
-      <div className='flex flex-col justify-center items-center h-full'>
-        <div className='flex  justify-center w-full '>
-          <h2 className=' text-black font-bold text-3xl from-neutral-500 to-slate-500'>Choose<span className="text-yellow-600">  Sri Ranga Laser
-          </span> </h2>
-        </div>
-
-        <div className=" text-xl text-justify font-semibold h-60 flex flex-col justify-center items-center">
-          <p className="flex justify-center w-11/12 ml-14">Sri Ranga Laser custom sheet metal parts in Northern Maryland that are reliable and top-quality. Read our blog to learn more about trends or submit a contact form for a free quote. <br />You can also call us at +91 97904 84558.
-
-            All of our fabricated metal products are made in the India.<br />
-
-            #carbonsteel #fabrication #sheetfabrication</p>
-          <div className="flex items-start ml-12">
-            <HoverBorderGradientDemo />
-          </div>
-        </div>
-      </div>
+      <Choose />
 
     </div>
     </div>

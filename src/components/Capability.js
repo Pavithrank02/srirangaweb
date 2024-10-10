@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect.tsx";
-import { HoverBorderGradientDemo } from "./Button.js";
+import Choose from "./Choose.js";
 
 
 const words = 'The process involves various machines and methods depending on the type of end results you’re searching for. For example, the procedure can include laser cutting, bending, inserts, welding, grinding, powder coating and others. Here’s a quick rundown of varying processes:'
@@ -87,22 +87,7 @@ const Capability = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col justify-center  h-full'>
-          <div className='flex  justify-center w-full '>
-            <h2 className=' text-black font-bold text-3xl from-neutral-500 to-slate-500'>Choose<span className="text-yellow-600">  Sri Ranga Laser
-            </span> </h2>
-          </div>
-          <div className=" text-xl text-justify font-semibold h-60 flex flex-col justify-center items-center">
-            <p className="flex justify-center w-11/12 ml-14">Sri Ranga Laser custom sheet metal parts in Northern Maryland that are reliable and top-quality. Read our blog to learn more about trends or submit a contact form for a free quote. <br />You can also call us at +91 97904 84558.
-
-              All of our fabricated metal products are made in the India.<br />
-
-              #carbonsteel #fabrication #sheetfabrication</p>
-            <div className="flex items-start ml-12">
-              <HoverBorderGradientDemo />
-            </div>
-          </div>
-        </div>
+        <Choose />
       </div >
     )
   );
