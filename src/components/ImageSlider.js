@@ -1,9 +1,14 @@
 "use client";
-import { motion } from "framer-motion";
 import React from "react";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { ImagesSlider } from "../components/ui/images-slider.tsx";
 
 export function ImagesSliderDemo() {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate('/about')
+  }
   const images = [
     "https://5.imimg.com/data5/SELLER/Default/2023/9/342749361/QI/OU/FJ/40353772/40353772-location-fcp-1689928065590-1000x1000.jpg",
     "https://5.imimg.com/data5/SELLER/Default/2023/9/342904673/DM/LA/ZY/40353772/74ac532d-1697-49bb-b940-d2cf2be41cdf-1000x1000.jpg",
@@ -26,11 +31,13 @@ export function ImagesSliderDemo() {
         className="z-50 flex flex-col justify-center items-center">
         <motion.p
           className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-          The hero section slideshow <br /> nobody asked for
+          Learn More About Us <br /> Click Below to Learn
         </motion.p>
         <button
-          className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-          <span>Join now →</span>
+          className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4"
+          onClick={handleClick}
+        >
+          <span>About Us →</span>
           <div
             className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
         </button>

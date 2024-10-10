@@ -1,7 +1,8 @@
 import React from 'react';
-import img from '../images/img1.JPG';
 import { NavLink } from 'react-router-dom';
 import { HoverBorderGradientDemo } from './Button';
+import { Navbar } from './Navbar.js'
+import img from '../images/img1.JPG';
 
 const Header = () => {
   return (
@@ -47,7 +48,7 @@ const Header = () => {
                   : 'hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-110'
               }
             >
-              Services
+              Products
             </NavLink>
           </div>
           <div className='p-2'>
@@ -63,16 +64,8 @@ const Header = () => {
             </NavLink>
           </div>
           <div className='p-2'>
-            <NavLink
-              to='/customers'
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-yellow-500 border-b-2 border-yellow-500'
-                  : 'hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-110'
-              }
-            >
-              Customers
-            </NavLink>
+
+            <Navbar />
           </div>
         </div>
 

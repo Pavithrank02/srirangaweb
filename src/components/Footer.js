@@ -1,7 +1,7 @@
 import React from 'react';
-import img from '../images/img1.JPG';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaWhatsapp, FaMailBulk, FaPhoneSquareAlt, FaFacebook, FaInstagramSquare } from "react-icons/fa";
+import img from '../images/img1.JPG';
 
 const Footer = () => {
   return (

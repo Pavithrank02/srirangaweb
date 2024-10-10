@@ -17,3 +17,4 @@
   - footer added
   - about us page with image slider and content is added
   - capabilities page is been done
+  - email contact added
