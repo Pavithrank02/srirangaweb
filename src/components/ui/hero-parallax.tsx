@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
-  const thirdRow = products.slice(10, 15);
+  // const thirdRow = products.slice(10, 15);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,

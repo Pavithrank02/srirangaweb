@@ -121,14 +121,14 @@ export function ExpandableCardDemo({ cards }) {
             onClick={() => setActive(card)}
             className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col md:flex-row">
+            <div className="flex gap-4 flex-col sm:flex-col md:flex-row">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <LensDemo
                   src={card.src}
                   alt={card.title}
                   width={200}
                   height={200}
-                  className="h-24 w-32 md:h-40 md:w-40 lg:h-40 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-center"
+                  className="h-24 sm:w-32 md:h-40 md:w-40 lg:h-40 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-center"
                 />
               </motion.div>
               <div className="flex flex-col justify-around">
