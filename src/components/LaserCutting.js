@@ -47,7 +47,7 @@ const LaserCutting = () => {
 
   }
   return (
-    <div className='h-full flex flex-col justify-evenly '>
+    <div className='h-full flex flex-col  '>
       <div>
         <ImagesSliderDemo name={'Laser Cutting'} />
       </div>
