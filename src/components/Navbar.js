@@ -21,7 +21,7 @@ export function Navbar({ className }) {
           {/* Adjusting grid layout for responsiveness */}
           <div className="text-sm grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
             {/* Centering each item in mobile view */}
-            <div className="flex flex-col items-center">
+            <div className=" items-center">
               <ProductItem
                 title="Laser Cutting"
                 href="/laserservice"

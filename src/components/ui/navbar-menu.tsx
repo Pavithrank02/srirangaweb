@@ -28,12 +28,12 @@ export const MenuItem = ({
       </motion.p>
       {active !== null && (
         <motion.div
-          initial={{ opacity: 0, scale: 0.85, y: 10 }}
+          initial={{ opacity: 0, scale: 0.85, y: -5 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={transition}
         >
           {active === item && (
-            <div className="absolute top-[calc(100%_+_0.2rem)] left-1/2 transform -translate-x-1/2 ">
+            <div className="absolute top-[calc(100%_+_0.2rem)]  sm:left-1/2 transform -translate-x-1/2 sm:ml-0 -ml-28">
               <motion.div
                 transition={transition}
                 layoutId="active"
@@ -58,7 +58,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className="" // Adjust these values for range
+      className="flex justify-center " // Adjust these values for range
     >
       <div className="-bottom-10 "></div> {/* Extend the range */}
       {children}
@@ -74,7 +74,7 @@ export const ProductItem = ({
   src
 }) => {
   return (
-    <Link to={href} className="flex space-x-2">
+    <Link to={href} className="flex space-x-2 h-full">
       <img
         src={src}
         width={140}
