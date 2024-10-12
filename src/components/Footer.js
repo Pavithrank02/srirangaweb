@@ -27,15 +27,15 @@ const Footer = () => {
             <p className="text-white font-bold text-sm md:text-lg mb-2">Contact Us:</p>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center mb-2">
               <FaPhoneSquareAlt style={{ color: '#FFCA4B' }} />
-              <span className="ml-2">: +91 97904 84558</span>
+              <span className="ml-2"> +91 97904 84558</span>
             </div>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center mb-2">
               <FaMailBulk style={{ color: '#FFCA4B' }} />
-              <span className="ml-2">: srirangalaser.coimbatore@gmail.com</span>
+              <span className="ml-2"> srirangalaser.coimbatore@gmail.com</span>
             </div>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center">
               <FaMapMarkerAlt style={{ color: '#FFCA4B' }} />
-              <span className="ml-2">: 9/1E, Gandhi Nagar, Ondiputhur Road, Irugur, Coimbatore - 641103</span>
+              <span className="ml-2"> 9/1E, Gandhi Nagar, Ondiputhur Road, Irugur, Coimbatore - 641103</span>
             </div>
           </div>
 
