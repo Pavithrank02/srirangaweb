@@ -14,7 +14,7 @@ const Footer = () => {
             <img src={img} className="h-16 md:h-24" alt="Logo" />
           </div>
           <div className="text-white text-sm md:text-lg font-light w-full md:w-11/12">
-            APX Incorporated is comprised of five fully integrated manufacturing operations. In addition to APX Enclosures (NEMA Enclosures & ITS Enclosures), the APX Company is comprised of APX York Sheet Metal, APX Industrial Coatings, APX Mitchell Machine Shop, and APX Precision Routing.
+            Sri Ranga Laser Incorporated is comprised of five fully integrated manufacturing operations. In addition to APX Enclosures (NEMA Enclosures & ITS Enclosures), the APX Company is comprised of APX York Sheet Metal, APX Industrial Coatings, APX Mitchell Machine Shop, and APX Precision Routing.
           </div>
         </div>
 
