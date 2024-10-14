@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils.ts";
+import '../../global.css'
 
 export const Tabs = ({
   tabs: propTabs,
@@ -27,7 +28,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-row items-center scrollbar-hide justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible sm:no-visible-scrollbar max-w-full w-full",
           containerClassName
         )}>
         {propTabs.map((tab, idx) => (
@@ -52,7 +53,7 @@ export const Tabs = ({
                 )} />
             )}
 
-            <span className="relative block text-yellow-600 dark:text-yellow-600 text-xl font-semibold">
+            <span className="relative block text-yellow-600 dark:text-yellow-600  text-sm sm:text-xl font-semibold">
               {tab.title}
             </span>
           </button>

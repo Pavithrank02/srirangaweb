@@ -22,25 +22,23 @@ const TwoColumnTable = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between items-center min-h-full bg-gray-100 p-8">
-      <h1 className='text-3xl font-extrabold'>Fact Sheet</h1>
+    <div className="flex flex-col justify-between items-center min-h-full bg-gray-100 p-4">
+      <h1 className='text-2xl font-extrabold mb-4 text-center'>Fact Sheet</h1>
       <motion.div
         initial="hidden"
         animate="visible"
         exit="exit"
         variants={tableVariants}
         transition={{ duration: 0.5 }}
-        className="bg-white shadow-lg rounded-lg overflow-hidden max-w-4xl w-1/2"
+        className="bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-2xl"
       >
-
-        <div className="grid grid-cols-2 gap-4 p-4">
+        <div className="grid grid-cols-2 gap-2 sm:gap-4 p-4">
           {/* Left Column (Head) */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2 sm:gap-4">
             {Object.keys(data).map((key) => (
-
               <motion.div
                 key={key}
-                className="font-bold text-lg text-gray-800"
+                className="font-bold text-sm sm:text-lg text-gray-800"
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.2, type: 'spring' }}
@@ -51,20 +49,18 @@ const TwoColumnTable = () => {
           </div >
 
           {/* Right Column (Body) */}
-          <div div className="flex flex-col gap-4" >
-            {
-              Object.values(data).map((value, index) => (
-                <motion.div
-                  key={index}
-                  className="text-lg text-gray-600"
-                  initial={{ x: 100, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: 0.2, type: 'spring' }}
-                >
-                  {value}
-                </motion.div>
-              ))
-            }
+          <div className="flex flex-col gap-2 sm:gap-4">
+            {Object.values(data).map((value, index) => (
+              <motion.div
+                key={index}
+                className="text-sm sm:text-lg text-gray-600"
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.2, type: 'spring' }}
+              >
+                {value}
+              </motion.div>
+            ))}
           </div>
         </div>
       </motion.div>

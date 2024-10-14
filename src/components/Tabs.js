@@ -11,19 +11,19 @@ export function TabsDemo() {
       value: "MDF Jalis",
       content: (
         <div
-          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide h-full relative rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
-          <p>MDF Jalis</p>
+          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide h-60 sm:h-full relative rounded-2xl  text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
+          <p className="flex justify-center text-center sm:text-3xl w-full">MDF Jalis</p>
           <ExpandableCardDemo cards={cards1} />
         </div>
       ),
     },
     {
-      title: "Designer Stainless Steel Sheet",
+      title: "Designer Stainless Sheet",
       value: "services",
       content: (
         <div
-          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide  relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
-          <p>Designer Stainless Steel Sheet</p>
+          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide h-60 relative sm:h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
+          <p className="flex justify-center text-center sm:text-3xl w-full">Designer Stainless Steel Sheet</p>
           <ExpandableCardDemo cards={cards2} />
         </div>
       ),
@@ -33,8 +33,8 @@ export function TabsDemo() {
       value: "playground",
       content: (
         <div
-          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide  relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
-          <p>Laser Cutting Services</p>
+          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide h-60 relative sm:h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
+          <p className="flex justify-center text-center sm:text-3xl w-full">Laser Cutting Services</p>
           <ExpandableCardDemo cards={cards3} />
         </div>
       ),
@@ -44,8 +44,8 @@ export function TabsDemo() {
       value: "content",
       content: (
         <div
-          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide  h-full relative  rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
-          <p>Decorative Wall Art</p>
+          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide h-60  sm:h-full relative  rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
+          <p className="flex justify-center text-center sm:text-3xl w-full">Decorative Wall Art</p>
           <ExpandableCardDemo cards={cards4} />
         </div>
       ),
@@ -55,19 +55,19 @@ export function TabsDemo() {
       value: "random",
       content: (
         <div
-          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide  h-full relative  rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
-          <p>Cr Sheet</p>
+          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide h-60 sm:h-full relative  rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
+          <p className="flex justify-center text-center sm:text-3xl w-full">Cr Sheet</p>
           <ExpandableCardDemo cards={cards5} />
         </div>
       ),
     },
     {
-      title: "Cnc Gas Plasma Cutting",
+      title: "Cnc Gas Plasma",
       value: "Cnc Gas Plasma Cutting Service",
       content: (
         <div
-          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide  relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
-          <p>Cnc Gas Plasma Cutting Service</p>
+          className="w-full overflow-scroll overflow-x-hidden scrollbar-hide h-60 relative sm:h-full  rounded-2xl p-10 text-xl md:text-4xl font-bold text-yellow-600 bg-gradient-to-br bg-black">
+          <p className="flex justify-center text-center sm:text-3xl w-full">Cnc Gas Plasma Cutting Service</p>
           <ExpandableCardDemo cards={cards6} />
         </div>
       ),
@@ -76,22 +76,12 @@ export function TabsDemo() {
 
   return (
     (<div
-      className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
+      className=" h-[20rem]  scrollbar-hide md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-28 sm:my-40">
       <Tabs tabs={tabs} />
     </div>)
   );
 }
-
-const DummyContent = () => {
-  return (
-    (<img
-      src="/linear.webp"
-      alt="dummy image"
-      width="1000"
-      height="1000"
-      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto" />)
-  );
-};
+;
 const cards1 = [
   {
     description: "₹ 350/ sq",

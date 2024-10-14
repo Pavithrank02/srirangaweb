@@ -14,7 +14,7 @@ const Footer = () => {
             <img src={img} className="h-16 md:h-24" alt="Logo" />
           </div>
           <div className="text-white text-sm md:text-lg font-light w-full md:w-11/12">
-            APX Incorporated is comprised of five fully integrated manufacturing operations. In addition to APX Enclosures (NEMA Enclosures & ITS Enclosures), the APX Company is comprised of APX York Sheet Metal, APX Industrial Coatings, APX Mitchell Machine Shop, and APX Precision Routing.
+            Sri Ranga Laser Incorporated is comprised of five fully integrated manufacturing operations. In addition to APX Enclosures (NEMA Enclosures & ITS Enclosures), the APX Company is comprised of APX York Sheet Metal, APX Industrial Coatings, APX Mitchell Machine Shop, and APX Precision Routing.
           </div>
         </div>
 
@@ -27,15 +27,15 @@ const Footer = () => {
             <p className="text-white font-bold text-sm md:text-lg mb-2">Contact Us:</p>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center mb-2">
               <FaPhoneSquareAlt style={{ color: '#FFCA4B' }} />
-              <span className="ml-2">: +91 97904 84558</span>
+              <span className="ml-2"> +91 97904 84558</span>
             </div>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center mb-2">
               <FaMailBulk style={{ color: '#FFCA4B' }} />
-              <span className="ml-2">: srirangalaser.coimbatore@gmail.com</span>
+              <span className="ml-2"> srirangalaser.coimbatore@gmail.com</span>
             </div>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center">
               <FaMapMarkerAlt style={{ color: '#FFCA4B' }} />
-              <span className="ml-2">: 9/1E, Gandhi Nagar, Ondiputhur Road, Irugur, Coimbatore - 641103</span>
+              <span className="ml-2"> 9/1E, Gandhi Nagar, Ondiputhur Road, Irugur, Coimbatore - 641103</span>
             </div>
           </div>
 
