@@ -1,10 +1,10 @@
 import React from 'react'
-import { ImagesSliderDemo } from '../Corousal'
-import CompanyDesc from '../CompanyDesc'
-import { LayoutGridDemo } from '../ImageLayout'
-import { AnimatedTooltipPreview } from '../ToolTip'
-import TwoColumnTable from '../FactTable'
-import Choose from '../Choose'
+import { ImagesSliderDemo } from '../components/Corousal'
+import CompanyDesc from '../components/CompanyDesc'
+import { LayoutGridDemo } from '../components/ImageLayout'
+import { AnimatedTooltipPreview } from '../components/ToolTip'
+import TwoColumnTable from '../components/FactTable'
+import Choose from '../components/Choose'
 
 const AboutUs = () => {
   return (
