@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaWhatsapp, FaMailBulk, FaPhoneSquareAlt, FaFacebook, FaInstagramSquare } from "react-icons/fa";
+import { IconPhone, IconMapPin, IconMailFilled } from "@tabler/icons-react";
 import img from '../images/img1.JPG';
+import { FloatingDockDemo } from './FooterIcons';
 
 const Footer = () => {
   return (
@@ -26,15 +27,15 @@ const Footer = () => {
           <div className="mb-6">
             <p className="text-white font-bold text-sm md:text-lg mb-2">Contact Us:</p>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center mb-2">
-              <FaPhoneSquareAlt style={{ color: '#FFCA4B' }} />
+              <IconPhone style={{ color: '#FFCA4B' }} />
               <span className="ml-2"> +91 97904 84558</span>
             </div>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center mb-2">
-              <FaMailBulk style={{ color: '#FFCA4B' }} />
+              <IconMailFilled style={{ color: '#FFCA4B' }} />
               <span className="ml-2"> srirangalaser.coimbatore@gmail.com</span>
             </div>
             <div className="text-white font-light text-sm md:text-base flex flex-row items-center">
-              <FaMapMarkerAlt style={{ color: '#FFCA4B' }} />
+              <IconMapPin style={{ color: '#FFCA4B' }} />
               <span className="ml-2"> 9/1E, Gandhi Nagar, Ondiputhur Road, Irugur, Coimbatore - 641103</span>
             </div>
           </div>
@@ -49,14 +50,16 @@ const Footer = () => {
           </div>
 
           {/* Social Media */}
-          <div className="text-white font-bold text-sm md:text-lg">
-            <p className="mb-2">Follow Us:</p>
-            <motion.div
-              className="flex flex-row justify-between text-white font-light w-32 md:w-44"
-              animate={{ x: 0, scale: 1 }}
-              initial={{ scale: 0 }}
-              transition={{ type: "spring", delay: 2 }}>
-              <a href="https://github.com/Pavithrank02" target="_blank" rel="noopener noreferrer">
+        </div>
+      </div>
+      <div className="text-white font-bold text-sm md:text-lg text-center">
+        <p className="mb-2">Follow Us</p>
+        <motion.div
+          className="flex flex-row justify-between text-white font-light w-32 md:w-44"
+          animate={{ x: 0, scale: 1 }}
+          initial={{ scale: 0 }}
+          transition={{ type: "spring", delay: 2 }}>
+          {/* <a href="https://github.com/Pavithrank02" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp style={{ color: '#FFCA4B', md: 32 }} size={24} />
               </a>
               <a href="https://github.com/Pavithrank02" target="_blank" rel="noopener noreferrer">
@@ -64,10 +67,10 @@ const Footer = () => {
               </a>
               <a href="https://github.com/Pavithrank02" target="_blank" rel="noopener noreferrer">
                 <FaFacebook style={{ color: '#FFCA4B', md: 32 }} size={24} />
-              </a>
-            </motion.div>
-          </div>
-        </div>
+              </a> */}
+          <FloatingDockDemo />
+        </motion.div>
+
       </div>
 
       {/* Bottom Section with Copyright */}

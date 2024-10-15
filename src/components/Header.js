@@ -50,7 +50,7 @@ const Header = () => {
           </div>
           <div className='p-2'>
             <NavLink
-              to='/services'
+              to='/product'
               className={({ isActive }) =>
                 isActive
                   ? 'text-yellow-500 border-b-2 border-yellow-500'

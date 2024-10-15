@@ -1,7 +1,7 @@
 import React from 'react'
-import { HeroParallaxDemo } from '../Show'
-import { ImagesSliderDemo } from '../ImageSlider'
-import Choose from '../Choose'
+import { HeroParallaxDemo } from '../components/Show'
+import { ImagesSliderDemo } from '../components/ImageSlider'
+import Choose from '../components/Choose'
 
 const Home = () => {
   return (
