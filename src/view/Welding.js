@@ -1,6 +1,6 @@
 import React from 'react'
-import { ImagesSliderDemo } from './Corousal'
-import ServicesComponent from './ServicesComponent'
+import { ImagesSliderDemo } from '../components/Corousal'
+import ServicesComponent from '../components/ServicesComponent'
 
 const Welding = () => {
   const bullets = [
