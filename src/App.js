@@ -10,8 +10,9 @@ import Contact from "./view/Contact";
 import LaserCutting from "./view/LaserCutting";
 import MetalBending from "./view/MetalBending";
 import Welding from "./view/Welding";
-import ProductDesign from "./components/ProductDesign";
-import MetalShearing from "./view/MetalShearing";
+import ProductDesign from "./view/ProductDesign";
+import PowderCoating from "./view/PowderCoating";
+import MetalRolling from "./view/MetalRolling";
 
 
 function App() {
@@ -27,8 +28,9 @@ function App() {
         <Route path="/laserservice" element={<LaserCutting />} />
         <Route path="/bendingservice" element={<MetalBending />} />
         <Route path="/welding" element={<Welding />} />
-        <Route path="/product" element={<ProductDesign />} />
-        <Route path="/shearing" element={<MetalShearing />} />
+        <Route path="/products" element={<ProductDesign />} />
+        <Route path="/rolling" element={<MetalRolling />} />
+        <Route path="/powder" element={<PowderCoating />} />
       </Routes>
       <Footer />
     </div>

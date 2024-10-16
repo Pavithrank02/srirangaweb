@@ -34,7 +34,7 @@ export function Navbar({ className }) {
                 title="Metal Bending"
                 href="/bendingservice"
                 src="https://t4.ftcdn.net/jpg/03/99/51/77/360_F_399517769_gUVJn5wXj1H7JczuFdw1dTyXK0ZE8rJf.jpg"
-                description="Production-ready Tailwind CSS components for your next project."
+                description="We have everything you need for custom sheet metal fabrication in-house."
               />
             </div>
             <div className="flex flex-col items-center">
@@ -42,15 +42,31 @@ export function Navbar({ className }) {
                 title="Welding"
                 href="/welding"
                 src="https://static.vecteezy.com/system/resources/thumbnails/036/148/811/small_2x/ai-generated-welder-working-wearing-mask-industrial-safety-concept-photo.jpg"
-                description="Never write from scratch again. Go from idea to blog in minutes."
+                description=" Stainless steel will give you the results you’re looking for."
               />
             </div>
             <div className="flex flex-col items-center">
               <ProductItem
-                title="Metal Shearing"
-                href="/shearing"
-                src="https://fractory.com/wp-content/uploads/2023/06/sheet-metal-shearing-operations.jpg"
-                description="Respond to government RFPs, RFIs, and RFQs 10x faster using AI."
+                title="Powder Coating"
+                href="/powder"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxK4u5RlHjsIXF92129GO1z-6jbzR9VkXL6Q&s"
+                description="Stripping the item to its bare metal by removing paints, finishes, rust, grease and dirt."
+              />
+            </div>
+            <div className="flex flex-col items-center">
+              <ProductItem
+                title="Metal Rolling"
+                href="/rolling"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF9rU3ThNv4H4I9CQVPStpjt2JmYuSkd8CVg&s"
+                description="Stripping the item to its bare metal by removing paints, finishes, rust, grease and dirt."
+              />
+            </div>
+            <div className="flex flex-col items-center">
+              <ProductItem
+                title="Product Design"
+                href="/products"
+                src="https://www.grandviewresearch.com/static/img/research/sheet-metal-market-concentration-characteristics.png"
+                description="Stripping the item to its bare metal by removing paints, finishes, rust, grease and dirt."
               />
             </div>
           </div>
