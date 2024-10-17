@@ -19,3 +19,4 @@
   - capabilities page is been done
   - email contact added
   - Responsiveness for whole website added
+  - Lazy loading and shimmerUI is added

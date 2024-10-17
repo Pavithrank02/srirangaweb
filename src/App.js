@@ -1,37 +1,42 @@
 import { Route, Routes } from "react-router-dom";
-
-import Home from "./view/Home";
+import { Suspense, lazy } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import AboutUs from "./view/AboutUs";
-import Service from "./view/Service";
-import Capabilities from "./view/Capabilities";
-import Contact from "./view/Contact";
-import LaserCutting from "./view/LaserCutting";
-import MetalBending from "./view/MetalBending";
-import Welding from "./view/Welding";
-import ProductDesign from "./view/ProductDesign";
-import PowderCoating from "./view/PowderCoating";
-import MetalRolling from "./view/MetalRolling";
+import ShimmerUi from "./components/ShimmerUi";
 
+// Lazy-loaded components
+const Home = lazy(() => import("./view/Home"));
+const AboutUs = lazy(() => import("./view/AboutUs"));
+const Service = lazy(() => import("./view/Service"));
+const Capabilities = lazy(() => import("./view/Capabilities"));
+const Contact = lazy(() => import("./view/Contact"));
+const LaserCutting = lazy(() => import("./view/LaserCutting"));
+const MetalBending = lazy(() => import("./view/MetalBending"));
+const Welding = lazy(() => import("./view/Welding"));
+const ProductDesign = lazy(() => import("./view/ProductDesign"));
+const PowderCoating = lazy(() => import("./view/PowderCoating"));
+const MetalRolling = lazy(() => import("./view/MetalRolling"));
 
 function App() {
   return (
     <div className="flex flex-col justify-between">
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/product" element={<Service />} />
-        <Route path="/capability" element={<Capabilities />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/laserservice" element={<LaserCutting />} />
-        <Route path="/bendingservice" element={<MetalBending />} />
-        <Route path="/welding" element={<Welding />} />
-        <Route path="/products" element={<ProductDesign />} />
-        <Route path="/rolling" element={<MetalRolling />} />
-        <Route path="/powder" element={<PowderCoating />} />
-      </Routes>
+      {/* Suspense allows fallback content to be displayed while components are being loaded */}
+      <Suspense fallback={<div><ShimmerUi /></div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/product" element={<Service />} />
+          <Route path="/capability" element={<Capabilities />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/laserservice" element={<LaserCutting />} />
+          <Route path="/bendingservice" element={<MetalBending />} />
+          <Route path="/welding" element={<Welding />} />
+          <Route path="/products" element={<ProductDesign />} />
+          <Route path="/rolling" element={<MetalRolling />} />
+          <Route path="/powder" element={<PowderCoating />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </div>
   );
