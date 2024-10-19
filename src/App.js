@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="flex flex-col justify-between">
       <Header />
-      {/* Suspense allows fallback content to be displayed while components are being loaded */}
+      {/*  */}
       <Suspense fallback={<div><ShimmerUi /></div>}>
         <Routes>
           <Route path="/" element={<Home />} />
