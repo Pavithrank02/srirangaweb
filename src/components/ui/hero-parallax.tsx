@@ -36,13 +36,13 @@ export const HeroParallax = ({ products }) => {
         }}
         className="">
         {/* First Row */}
-        <motion.div className="flex flex-col items-center space-y-8 mb-10 md:flex-row-reverse md:space-y-0 md:space-x-reverse md:space-x-10">
+        <motion.div className="flex flex-col items-center space-y-8 mb-20 md:flex-row-reverse md:space-y-5 md:space-x-reverse md:space-x-10">
           {firstRow.map((product) => (
             <ProductCard product={product} translate={translateX} key={product.title} />
           ))}
         </motion.div>
         {/* Second Row */}
-        <motion.div className="flex flex-col items-center space-y-8 mb-10 md:flex-row md:space-y-0 md:space-x-20">
+        <motion.div className="flex flex-col items-center space-y-14 mb-10 md:flex-row md:space-y-0 md:space-x-12">
           {secondRow.map((product) => (
             <ProductCard product={product} translate={translateXReverse} key={product.title} />
           ))}
