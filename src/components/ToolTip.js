@@ -41,7 +41,7 @@ const people = [
 
 export function AnimatedTooltipPreview() {
   return (
-    (<div className="h-36 flex flex-col items-center justify-between mb-10 w-full">
+    (<div className="h-36 flex flex-col items-center justify-between mb-8 w-full">
       <div className="font-bold text-3xl">
         <h2> Our Team</h2>
       </div>
