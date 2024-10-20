@@ -31,17 +31,18 @@ export const products = [
     thumbnail:
       "https://fractory.com/wp-content/uploads/2023/06/sheet-metal-shearing-operations.jpg",
   },
+
   {
-    title: "Metal Shearing",
-    link: "/shearing",
+    title: "Metal Rolling",
+    link: "/rolling",
     thumbnail:
-      "https://fractory.com/wp-content/uploads/2023/06/sheet-metal-shearing-operations.jpg",
+      "https://www.rapiddirect.com/wp-content/uploads-v0/2022/01/how-laser-cutting-works.gif",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    title: "Powder Coating",
+    link: "/powder",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxK4u5RlHjsIXF92129GO1z-6jbzR9VkXL6Q&s",
   },
 
   {
@@ -55,6 +56,12 @@ export const products = [
     link: "/bendingservice",
     thumbnail:
       "https://t4.ftcdn.net/jpg/03/99/51/77/360_F_399517769_gUVJn5wXj1H7JczuFdw1dTyXK0ZE8rJf.jpg",
+  },
+  {
+    title: "Product Design",
+    link: "/products",
+    thumbnail:
+      "https://www.grandviewresearch.com/static/img/research/sheet-metal-market-concentration-characteristics.png",
   },
   {
     title: "Laser Cutting",
