@@ -8,10 +8,10 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_ynvb5a9', // Replace with your EmailJS service ID
-      'template_bn0cvqd', // Replace with your EmailJS template ID
+      process.env.REACT_SERVICE_KEY, // Replace with your EmailJS service ID
+      process.env.REACT_TEMPLATE_ID, // Replace with your EmailJS template ID
       form.current, // Replace with your EmailJS user ID
-      'ksg1haAIjHq6UUtLL',
+      process.env.REACT_TEMPLATE_NAME,
     )
       .then((result) => {
         console.log('Email sent successfully:', result.text);
