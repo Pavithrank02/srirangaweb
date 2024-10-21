@@ -28,7 +28,7 @@ export function ImagesSliderDemo() {
         <motion.p
           className="font-bold text-xl md:text-3xl lg:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4"
         >
-          Learn More About Us <br /> Click Below to Learn
+          Learn More About Us <br /> Click Below
         </motion.p>
         <button
           className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4"
