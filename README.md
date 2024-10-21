@@ -20,3 +20,4 @@
   - email contact added
   - Responsiveness for whole website added
   - Lazy loading and shimmerUI is added
+  - Map location integrated

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { IconPhone, IconMapPin, IconMailFilled } from "@tabler/icons-react";
 import img from '../images/img1.JPG';
 import { FloatingDockDemo } from './FooterIcons';
+import { MapButton } from './MapButton';
 
 const Footer = () => {
   return (
@@ -48,6 +49,7 @@ const Footer = () => {
               Sat-Sun: CLOSED
             </p>
           </div>
+          {/* <MapButton /> */}
 
           {/* Social Media */}
         </div>

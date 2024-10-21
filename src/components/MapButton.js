@@ -8,7 +8,7 @@ import {
 } from "../components/ui/animated-modal.tsx";
 import { IconLocation, IconPropeller, IconBrandProducthunt, IconRectangularPrismOff, IconContainer } from "@tabler/icons-react";
 
-export function AnimatedModalDemo() {
+export function MapButton() {
 
   return (
     (<div className="py-20  flex items-center justify-center">

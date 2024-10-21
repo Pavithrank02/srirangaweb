@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { HoverBorderGradientDemo } from './Button';
 import { Navbar } from './Navbar.js'
-import img from '../images/img1.JPG';
+import img from '../images/img1.png';
 
 const Header = () => {
   const navgate = useNavigate();
