@@ -61,7 +61,7 @@ export const products = [
     title: "Product Design",
     link: "/products",
     thumbnail:
-      "https://www.grandviewresearch.com/static/img/research/sheet-metal-market-concentration-characteristics.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF60SowaMcZ_ibomzusJtPCq6snW1Nq1ILJQ&s",
   },
   {
     title: "Laser Cutting",
