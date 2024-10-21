@@ -8,9 +8,9 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      process.env.REACT_SERVICE_KEY, // Replace with your EmailJS service ID
-      process.env.REACT_TEMPLATE_ID, // Replace with your EmailJS template ID
-      form.current, // Replace with your EmailJS user ID
+      process.env.REACT_SERVICE_KEY, // your EmailJS service ID
+      process.env.REACT_TEMPLATE_ID, // your EmailJS template ID
+      form.current, //  your EmailJS user ID
       process.env.REACT_TEMPLATE_NAME,
     )
       .then((result) => {
@@ -21,7 +21,7 @@ const ContactForm = () => {
         alert('Failed to send message. Please try again later.');
       });
 
-    e.target.reset(); // Clear the form after submission
+    e.target.reset(); // Clears the form after submission
   };
 
   return (

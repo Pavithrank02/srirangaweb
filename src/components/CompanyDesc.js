@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnimatedModalDemo } from './MapButton';
 
 const CompanyDesc = () => {
   return (
@@ -19,6 +20,7 @@ const CompanyDesc = () => {
           If you’re serious about procuring carbon steel fabrications, APX York Sheet Metal is your answer.
         </p>
       </div>
+      <AnimatedModalDemo />
     </div>
   );
 }
