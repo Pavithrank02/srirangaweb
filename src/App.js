@@ -3,7 +3,7 @@ import { Suspense, lazy } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ShimmerUi from "./components/ShimmerUi";
-import ScrollToTop from "./components/ScrollToTop"; // Import ScrollToTop component
+import ScrollToTop from "./components/ScrollToTop";
 
 // Lazy-loaded components
 const Home = lazy(() => import("./view/Home"));
