@@ -1,6 +1,6 @@
 import React from 'react'
-import { ImagesSliderDemo } from '../components/Corousal'
 import Capability from '../components/Capability'
+import { ImagesSliderDemo } from '../components/Corousal'
 
 const Capabilities = () => {
   return (

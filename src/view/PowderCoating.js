@@ -1,6 +1,6 @@
 import React from 'react'
-import { ImagesSliderDemo } from '../components/Corousal'
 import ServicesComponent from '../components/ServicesComponent'
+import { ImagesSliderDemo } from '../components/Corousal'
 
 const PowderCoating = () => {
   const bullets = [

@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router-dom";
 import { Suspense, lazy } from "react";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ShimmerUi from "./components/ShimmerUi";

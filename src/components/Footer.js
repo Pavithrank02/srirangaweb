@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { IconPhone, IconMapPin, IconMailFilled } from "@tabler/icons-react";
-import img from '../images/img1.JPG';
 import { FloatingDockDemo } from './FooterIcons';
 import { MapButton } from './MapButton';
+import img from '../images/img1.JPG';
 
 const Footer = () => {
   return (

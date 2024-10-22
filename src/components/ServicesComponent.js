@@ -1,6 +1,6 @@
 import React from 'react'
-import { HoverBorderGradientDemo } from './Button'
 import Choose from './Choose'
+import { HoverBorderGradientDemo } from './Button'
 
 const ServicesComponent = ({ image, benefits, bullets, data }) => {
   return (

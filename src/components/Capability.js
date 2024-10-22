@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { TextGenerateEffect } from "../components/ui/text-generate-effect.tsx";
 import Choose from "./Choose.js";
+import { TextGenerateEffect } from "../components/ui/text-generate-effect.tsx";
 
 const words = 'The process involves various machines and methods depending on the type of end results you’re searching for. For example, the procedure can include laser cutting, bending, inserts, welding, grinding, powder coating and others. Here’s a quick rundown of varying processes:';
 const content = {
