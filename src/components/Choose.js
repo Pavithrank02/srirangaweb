@@ -12,7 +12,7 @@ const Choose = () => {
 
       <div className="text-lg md:text-xl text-justify font-semibold flex flex-col justify-center items-center mt-6">
         <p className="flex  w-full md:w-10/12 text-justify">
-          Sri Ranga Laser custom sheet metal parts in Northern Maryland are reliable and top-quality. Read our blog to learn more about trends or submit a contact form for a free quote. <br />
+          Sri Ranga Laser custom sheet metal parts in Tamil Nadu are reliable and top-quality. Read our blog to learn more about trends or submit a contact form for a free quote. <br />
           You can also call us at +91 97904 84558.
           <br /><br />
           All of our fabricated metal products are made in India.

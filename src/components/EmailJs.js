@@ -30,7 +30,7 @@ const ContactForm = () => {
       <div className='flex flex-col sm:flex-row justify-evenly items-center '>
 
         <div className="flex flex-col justify-between items-start md:items-start  ">
-          <div className="mb-6 text-black ">
+          <div className="mb-6 p-5 text-black bg-slate-200 ">
             <p className="font-bold text-sm md:text-xl mb-2">Contact Us:</p>
             <div className=" font-semibold text-sm md:text-lg flex flex-row items-center mb-2">
               <span className="d"> +91 97904 84558</span>
@@ -47,7 +47,7 @@ const ContactForm = () => {
 
           </div>
           {/* Open Hours */}
-          <div className="mb-6">
+          <div className="mb-6 p-5 bg-slate-200">
             <p className=" font-bold text-sm md:text-lg mb-2">Open Hours:</p>
             <p className=" font-semibold text-sm md:text-base">
               Monday-Friday: 7:00AM – 5:00PM<br />
@@ -57,7 +57,7 @@ const ContactForm = () => {
         </div>
         <div className='w-3/5'>
 
-          <form ref={form} onSubmit={sendEmail} className="max-w-md mx-auto p-4 bg-yellow-600 shadow-md">
+          <form ref={form} onSubmit={sendEmail} className="max-w-md mx-auto p-4 bg-slate-200 shadow-md">
 
             <div className="mb-4">
               <label className="block text-sm font-bold mb-2">Name</label>

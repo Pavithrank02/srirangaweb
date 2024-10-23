@@ -6,6 +6,7 @@ import { MapButton } from './MapButton';
 import img from '../images/img1.JPG';
 
 const Footer = () => {
+  const date = new Date().getFullYear()
   return (
     <div className="bg-black flex flex-col justify-around w-full items-center py-6">
       {/* Upper section with company info and contact */}
@@ -77,7 +78,7 @@ const Footer = () => {
 
       {/* Bottom Section with Copyright */}
       <div className="text-white text-sm md:text-base mt-4">
-        <p>© 2024 Sri Ranga Company – All rights reserved.</p>
+        <p>©{date} Sri Ranga Company – All rights reserved.</p>
       </div>
     </div>
   );
