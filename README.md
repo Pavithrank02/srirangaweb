@@ -21,3 +21,4 @@
   - Responsiveness for whole website added
   - Lazy loading and shimmerUI is added
   - Map location integrated
+  - UI updated with responsiveness corrected
