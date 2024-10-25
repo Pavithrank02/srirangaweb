@@ -91,7 +91,6 @@ const ServicesComponent = ({ image, benefits, bullets, data }) => {
           </div>
         </div>
         <Choose />
-
       </div>
     </div>
     </div>
