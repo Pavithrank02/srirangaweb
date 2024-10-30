@@ -2,7 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { HoverBorderGradient } from "../components/ui/hover-border-gradient.tsx";
-//xx
+//
 export function HoverBorderGradientDemo() {
   const navigate = useNavigate();
   const handleButtonClick = () => {
