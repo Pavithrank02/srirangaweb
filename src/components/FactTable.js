@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-
+//
 const TwoColumnTable = () => {
   const [data, setData] = useState({
     'Basic Information': '-',
