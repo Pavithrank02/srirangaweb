@@ -7,7 +7,7 @@ import {
   ModalTrigger,
 } from "../components/ui/animated-modal.tsx";
 import { IconLocation, IconPropeller, IconBrandProducthunt, IconRectangularPrismOff, IconContainer } from "@tabler/icons-react";
-
+//
 export function MapButton() {
 
   return (
